@@ -45,12 +45,12 @@ namespace MoniMe.Controllers
             DateTime last = dateVals.Max();
             int noOfDays = Math.Abs((last - first).Days);
             int noOfHours = Math.Abs((last - first).Hours);
-            List<double> tickDiff = new List<double>();
+            //List<double> tickDiff = new List<double>();
 
-            for (int i = 0; i < dateVals.Count; i++)
-            {
-                tickDiff.Add(Math.Abs(dateVals[i].ToOADate()));
-            }
+            //for (int i = 0; i < dateVals.Count; i++)
+            //{
+            //    tickDiff.Add(Math.Abs(dateVals[i].ToOADate()));
+            //}
             // Create a list of vlues to plot 
             List<int> HitVals = new List<int>();
              HitVals.AddRange(nodeActivities.Select( d =>d.NumberOfHits).ToList());

@@ -22,11 +22,13 @@ namespace UIControlsExample
                         "~/Scripts/modernizr-*"));
 
             bundles.Add(new ScriptBundle("~/bundles/bootstrap").Include(
-                      "~/Scripts/bootstrap.js"));
+                      "~/Scripts/bootstrap.js",
+                      "~/Scripts/tempusdominus-bootstrap-4.js"));
 
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/nouislider.css",
+                      "~/Content/font-awesome.css",
                       "~/Content/site.css"));
         }
     }
