@@ -6,8 +6,6 @@
 
 <h2>Create</h2>
 
-
-
 @using (Html.BeginForm())
 {
     @Html.AntiForgeryToken()
@@ -31,8 +29,6 @@
             @Html.ValidationMessageFor(model => model.ToDate, "", new { @class = "text-danger" })
         </div>
     </div>
-
-
 
     <div class="form-group">
         @Html.LabelFor(model => model.NumberOfHits, htmlAttributes: new { @class = "control-label col-md-2" })
@@ -88,6 +84,5 @@
                 $("#NumberOfHits").val(Math.round(val));
             });
         });
-
     </script>
 }
